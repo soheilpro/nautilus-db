@@ -1,0 +1,1 @@
+docker exec $(docker ps -f name='nautilus-db' -q) 'sh' './src/init.sh'

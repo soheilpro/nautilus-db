@@ -1,0 +1,1 @@
+docker run --name nautilus-db -v nautilus-db-db:/data/db -v nautilus-db-configdb:/data/configdb -p 27017:27017 -d soheilpro/nautilus-db:latest
