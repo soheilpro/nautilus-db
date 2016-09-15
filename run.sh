@@ -11,14 +11,6 @@ case "$COMMAND" in
     ./mongodb.sh mongod
     ;;
 
-  init)
-    ./mongodb.sh mongo ./src/init.js
-    ;;
-
-  update)
-    ./mongodb.sh mongo ./src/update.js
-    ;;
-
   mongo)
     ./mongodb.sh mongo
     ;;
@@ -36,8 +28,6 @@ case "$COMMAND" in
     echo "Usage:"
     echo "  $(basename "$0") config"
     echo "  $(basename "$0") start"
-    echo "  $(basename "$0") init"
-    echo "  $(basename "$0") update"
     echo "  $(basename "$0") mongo"
     echo "  $(basename "$0") backup"
     echo "  $(basename "$0") restore"
